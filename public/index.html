@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <title>Document</title>
+</head>
+<body>
+    <div id="app1"></div>
+    <div id="app2"></div>
+    <script>
+      window.onload = () => {
+        const { createApp } = window.Vue
+
+        const app1 = createApp(window.share.com1.default)
+        app1.mount('#app1')
+
+        const app2 = createApp(window.share.com2.default)
+        app2.mount('#app2')
+      }
+    </script>
+</body>
+</html>
